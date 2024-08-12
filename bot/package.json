@@ -1,0 +1,28 @@
+{
+    "name": "ccmt-bot",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "npm run build && node ./dist/index.js",
+        "start:dev": "tsc-watch --onSuccess 'node dist/index.js'",
+        "copy-assets": "cp -r ./src/assets ./dist/"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@types/fs-extra": "^11.0.4",
+        "@types/node-telegram-bot-api": "^0.64.7",
+        "@types/qrcode": "^1.5.5",
+        "tsc-watch": "^6.2.0"
+    },
+    "dependencies": {
+        "axios": "^1.7.3",
+        "dotenv": "^16.4.5",
+        "fs-extra": "^11.2.0",
+        "node-telegram-bot-api": "^0.66.0",
+        "qrcode": "^1.5.3"
+    }
+}
